@@ -1,12 +1,11 @@
-/*
- * Welcome to your app's main JavaScript file!
- *
- * We recommend including the built version of this JavaScript file
- * (and its CSS file) in your base layout (base.html.twig).
- */
+import { render } from 'react-dom'
+import './bootstrap'
+import React from 'react'
+import './sass/app.scss'
+import Home from "./home";
 
-// any CSS you import will output into a single css file (app.css in this case)
-import './sass/app.scss';
-
-// start the Stimulus application
-import './bootstrap';
+render (
+    // eslint-disable-next-line react/react-in-jsx-scope
+    <Home />,
+    document.getElementById('main-header')
+)
